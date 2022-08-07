@@ -1,7 +1,22 @@
+import React from "react";
+import { connect } from "react-redux";
+import { processQueryParams } from "./reduxSlices/routesSlice";
 import Routes from "./routes/Routes";
 
-function App() {
-  return <>{Routes()}</>;
+class App extends React.Component {
+  componentDidMount() {
+    this.props?.processQueryParams();
+  }
+
+  render() {
+    return <>{Routes()}</>;
+  }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+  return {
+    processQueryParams: () => dispatch(processQueryParams()),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(App);
