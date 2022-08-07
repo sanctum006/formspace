@@ -1,8 +1,8 @@
-import { Route, Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
 const Routes = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/">
           <h1>Home</h1>
@@ -23,7 +23,7 @@ const Routes = () => {
           <h1>Home</h1>
         </Route>
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 };
 
