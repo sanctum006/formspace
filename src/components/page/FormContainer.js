@@ -1,9 +1,10 @@
 import { connect } from "react-redux";
-import { validateString } from "../../utilities/common";
+import { createRandomString, validateString } from "../../utilities/common";
 import AllForms from "./AllForms";
 import CreateForm from "./CreateForm";
 
 const FormContainer = ({ formId }) => {
+  console.log(createRandomString());
   return validateString(formId) ? <CreateForm /> : <AllForms />;
 };
 
