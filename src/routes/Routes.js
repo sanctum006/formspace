@@ -1,5 +1,5 @@
 import { Route, BrowserRouter, Switch } from "react-router-dom";
-import FormContainer from "../components/page/FormContainer";
+import FormContainer from "../pages/FormContainer";
 
 const Routes = () => {
   return (

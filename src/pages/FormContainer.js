@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { createRandomString, validateString } from "../../utilities/common";
+import { createRandomString, validateString } from "../utilities/common";
 import AllForms from "./AllForms";
 import CreateForm from "./CreateForm";
 
