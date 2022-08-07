@@ -1,4 +1,5 @@
 import { Route, BrowserRouter, Switch } from "react-router-dom";
+import FormContainer from "../components/page/FormContainer";
 
 const Routes = () => {
   return (
@@ -17,7 +18,7 @@ const Routes = () => {
           <h1>User Profile</h1>
         </Route>
         <Route exact path="/forms">
-          <h1>App </h1>
+          <FormContainer />
         </Route>
         <Route exact path="/forms/preview">
           <h1>Home</h1>

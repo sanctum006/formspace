@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { processQueryParams } from "./reduxSlices/routesSlice";
+import { processQueryParams } from "./reduxSlices/routerSlice";
 import Routes from "./routes/Routes";
 
 class App extends React.Component {

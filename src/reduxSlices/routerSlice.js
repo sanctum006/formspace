@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { parse } from "query-string";
 
-const routesSlice = createSlice({
+const routerSlice = createSlice({
   name: "routes",
   initialState: {
     queryParams: null,
@@ -14,6 +14,6 @@ const routesSlice = createSlice({
   extraReducers: {},
 });
 
-export const { processQueryParams } = routesSlice.actions;
+export const { processQueryParams } = routerSlice.actions;
 
-export default routesSlice.reducer;
+export default routerSlice.reducer;

@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import routes from "../reduxSlices/routesSlice";
+import router from "../reduxSlices/routerSlice";
 
 export default configureStore({
   reducer: {
-    routes,
+    router,
   },
 });
