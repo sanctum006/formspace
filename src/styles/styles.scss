@@ -1,6 +1,103 @@
 @import "~react-pro-sidebar/dist/scss/styles.scss";
 
+@import url(./fonts.scss);
+@import "./constants/colors.scss";
+
 * {
   padding: 0;
   margin: 0;
+}
+
+#root,
+html,
+body {
+  height: 100%;
+  font-family: "Blinker", sans-serif;
+}
+
+// Create Form Container
+
+.full-height-flex-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-width-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Formspace
+
+.homepage-container {
+  background-color: $primary;
+}
+
+.homepage-container-secondary {
+  padding: 0px 50px;
+}
+
+// Navbar
+
+.navbar {
+  padding: 20px 0;
+  background-color: $primary;
+}
+
+.navbar-header {
+  font-weight: 300;
+}
+
+// Hero Section
+
+.hero-section-container {
+  justify-content: stretch;
+  align-items: stretch;
+  min-height: 400px;
+  padding: 20px 50px;
+}
+
+.hero-section-child {
+  flex-grow: 1;
+  flex: 1;
+}
+
+.hero-section-container > .left-child > h1 {
+  width: 90%;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 1.05;
+}
+
+.hero-section-container > .left-child > p {
+  width: 80%;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 25px 0;
+}
+
+.hero-section-container > .left-child > .sub-text {
+  color: #262627;
+  font-size: 15px;
+  line-height: 0;
+}
+
+// Footbar
+
+.home-page-footbar {
+  background-color: #262627;
+  padding: 30px 50px;
+}
+
+.home-page-footbar h1 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.home-page-footbar-icons > * {
+  margin: 5px;
 }

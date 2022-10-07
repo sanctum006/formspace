@@ -1,12 +1,13 @@
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import FormContainer from "../pages/FormContainer";
+import HomePage from "../pages/HomePage";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <h1>Home</h1>
+          <HomePage />
         </Route>
         <Route exact path="/user/login">
           <h1>User Login</h1>
